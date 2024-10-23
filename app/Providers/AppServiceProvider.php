@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use JMS\Serializer\SerializerBuilder;
+use JMS\Serializer\SerializerInterface;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(SerializerInterface::class, function () {
+            return SerializerBuilder::create()->build();
+        });
     }
 
     /**

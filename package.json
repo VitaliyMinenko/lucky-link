@@ -6,6 +6,7 @@
         "dev": "vite"
     },
     "devDependencies": {
+        "@vitejs/plugin-vue": "^5.1.4",
         "autoprefixer": "^10.4.20",
         "axios": "^1.7.4",
         "concurrently": "^9.0.1",
@@ -17,6 +18,8 @@
     "dependencies": {
         "@inertiajs/inertia": "^0.11.1",
         "@inertiajs/inertia-vue3": "^0.6.0",
+        "@inertiajs/progress": "^0.1.2",
+        "@inertiajs/vue3": "^1.2.0",
         "vue": "^3.5.12"
     }
 }
